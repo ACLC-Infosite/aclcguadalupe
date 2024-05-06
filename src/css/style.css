@@ -3,6 +3,10 @@ footer {
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(29, 29, 59) !important;
     font-family: "Bebas Neue", sans-serif !important;
@@ -281,4 +285,18 @@ Phone responsiveness */
     width: 60vh;
     height: auto;
     
+}
+
+::-webkit-scrollbar{
+    width: 9px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(29, 29, 59);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
