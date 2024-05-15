@@ -1,31 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Aclc-Guadalupe Campus</title>
+        <title>Student Events - Aclc-Guadalupe Campus</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
-        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="/src/css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         
-        
     </head>
     <body>
-        <header id="header"></header>
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-            </style>
+        <header id="header" class="sticky-top"></header>
         <main>
-            <img src="/img/PR12_cropped_via_10015_io.png" style="height: 70vh; width: auto;" class="img-fluid" alt="Pr12-students"> 
+            <!--intro-->
+            <section class="text-center" style="margin-bottom: 20vh;">
+                <div class="row align-items-start">
+                  <div class="main justify-content-center animate">
+                    <img class="main-img animate" src="/src/img/class2.jpg" alt="" style="position: inherit;" >
+                    <div class="main-text-container animate">
+                      <h1 style="color: white; text-shadow: 1px 3px 5px black;">Aclc-Guadalupe CAMPUS</h1>
+                      <h2 style="color: white; text-shadow: 1px 3px 5px black;"> 
+                        School events
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+        <!--content-->
+        <section class="container-fluid text-center">
+            <div class="discover-text animate">
+              <h1 style="color: goldenrod; margin-bottom: 8vh; font-size: 70px;">VIEW OUR EVENTS THROUGH OUR DOMAIN</h1>
+            </div>
+            </section>
+
+            <section class="container-fluid" style="background-color: rgb(50, 13, 13); padding-bottom: 10vh; padding-top: 10vh; border-radius: 67px 67px 67px 67px;
+            -webkit-border-radius: 67px 67px 67px 67px;
+            -moz-border-radius: 67px 67px 67px 67px;">
+               <div id="carouselExampleCaptions" class="carousel slide">
+                 <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                 </div>
+                 <div class="carousel-inner discover-main animate" style="border-radius: 69px 69px 69px 69px;">
+                   <div class="carousel-item active">
+                     <img src="/src/img/class3.jpg" class="d-block w-100 img-fluid" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>DANCE PERFORMANCE</h5>
+                       <p></p>
+                     </div>
+                   </div>
+                   <div class="carousel-item">
+                     <img src="/src/img/HE12.jpg" class="d-block w-100 img-fluid" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>FIELD TRIPS</h5>
+                       <p>ACLC's library containing collections of books for people to read and borrow.</p>
+                     </div>
+                   </div>
+                   <div class="carousel-item">
+                     <img src="/src/img/sportfest.jpg" class="d-block w-100 img-fluid" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>SPORT FEST</h5>
+                       <p>Some representative placeholder content for the third slide.</p>
+                     </div>
+                   </div>
+                   <div class="carousel-item">
+                     <img src="/src/img/pageant.jpg" class="d-block w-100 img-fluid" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>PAGEANT</h5>
+                       <p>Some representative placeholder content for the third slide.</p>
+                     </div>
+                   </div>
+                 </div>
+                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
+               </div>
+             </div>
+             <div class="discover-text animate">
+             <h1 class="text-center" style="color: wheat; margin-top: 8vh; font-size: 30px;"> AMA Computer Learning Center (ACLC) was founded in 1986 and is a top computer training school in the country. It offers both full 2-year programs and shorter courses. ACLC's goal is to produce highly skilled graduates who can meet the growing needs of local and global job markets. The school provides the most up-to-date curriculum to equip students with the necessary skills for IT careers. ACLC also has international partnerships that allow its graduates to get well-paying jobs and advance in their careers.</h1>
+           </div>
+           </section>
         </main>
-        <footer></footer>
-        <script src="./src/js/index.js"></script>
+        <script src="/src/js/index.js"></script>
     </body>
 </html>

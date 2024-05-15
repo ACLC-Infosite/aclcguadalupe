@@ -16,6 +16,22 @@ body{
 nav{
     color:aliceblue !important;
 }
+header{
+    background-color: rgba(24, 24, 83, 0.452);
+    border-bottom: rgba(24, 24, 83, 0.74);
+}
+
+/*contact button*/
+header button{
+    border: rgba(206, 25, 25, 0.486) !important;
+    background-color:rgba(228, 19, 19, 0.486) !important;
+}
+header button:hover{
+    border: rgba(0, 174, 255, 0.418) !important;
+    background-color: rgb(32, 159, 218) !important;
+    color: rgb(255, 255, 255) !important;
+    transform: scale(1.1) ;
+}
 
 
 
@@ -23,7 +39,7 @@ nav{
     color: goldenrod;
 }
 .dropdown-item:hover{
-    color: wheat    ;
+    color: wheat;
     background-color:rgb(126, 26, 26);
     
 }
@@ -133,6 +149,17 @@ footer{
     }
 }
 
+@keyframes zoomout-main{
+    from{
+        opacity: 0%;
+        scale: 0.5;
+    }
+    50%{
+        
+        opacity: 100%;
+    }
+}
+
 
 @keyframes main-img {
     0% {
@@ -157,6 +184,33 @@ footer{
 
     100% {
         transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes discover-img-slide{
+    0% {
+        opacity: 0%;
+        transform: translateX(-90px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes main-text-opacity{
+    0% {
+        opacity: 0%;
+        transform: translateY(36px);
+    }
+    50%{
+        opacity: 20%;
+    }
+
+    100% {
+        transform: translatey(0px);
         opacity: 100%;
     }
 }
@@ -199,7 +253,7 @@ Phone responsiveness */
         transform: translateX(0);
     }
 }
-.h1-slide{
+.h1-slide h1{
     animation-name: slideinleft;
     animation-duration: 4.5s;
     animation-timing-function: ease;
@@ -209,59 +263,60 @@ Phone responsiveness */
     animation-fill-mode: forwards;
     transform: translateX(-150px);
 }
-/*--on scroll animations--*/
-
-.on-scroll-sec {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 8vh;
+.h1-slide.show{
+    animation: h1-slide 1.5s both;
 }
-.on-scroll-sec h2{
-    color: goldenrod;
+/*--img boxes---*/
+
+.discover-main.show{
+    opacity: 0%;
+    animation-name: main-text-opacity;
+    animation-duration: 2.5s;
+    animation-delay: 0.5;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
 }
 
-/*--carousel*/
-
-/*--card---*/
-.card-body h5 {
-    font-size: 30px;
-    color: rgb(197, 157, 24);
-}
-.card{
-    background-color: rgb(68, 18, 18);
-    margin-bottom: 40vh;
-    width: 50vh !important;
-    height: 30vh;
+.discover-text.show h1{
+    font-size: 60px; 
+    opacity: 0%;
+    
+    
+    animation-name: main-text-opacity;
+    animation-duration: 1s;
+    animation-timing-function: 1s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     
 }
-.card-body{
-    background-color: rgb(68, 18, 18);
-    color: wheat;
+.discover-img {
+    border-radius: 20px;
+    max-height: 85vh;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
 }
-.card a{
-    background-color: rgba(14, 9, 80, 0.459);
-    color: rgba(245, 222, 179, 0.527);
-}
-.card a:hover {
-    background-color: rgb(26, 12, 82);
-    color: goldenrod;
+
+.discover-img.show{
+    animation-name: main-text-opacity;
+    animation-duration: 1s;
+    
 }
 /*--container--*/
 
 /*boxes*/
 @keyframes pop-out-animation {
     0%{
-        opacity: 100%;
-        transform: scale(0.2);
+        opacity: 0%;
+        transform: translateX(-80px);
     }
+    
     50%{
-        opacity: 50%;
-        
+        opacity: 20%;
     }
     100%{
         opacity: 100%;
-        transform: scale(1);
+        transform: translateX(0px);
     }
 }
 
@@ -289,6 +344,7 @@ Phone responsiveness */
 
 ::-webkit-scrollbar{
     width: 9px;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar-track{
@@ -299,4 +355,7 @@ Phone responsiveness */
     border-radius: 10px;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.carousel-item img {
+    filter: brightness(72%);
 }
