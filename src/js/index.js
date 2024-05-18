@@ -1,6 +1,6 @@
 $(function(){
-    $("#header").load('/src/templates/header.html');
-    $("#footer").load('/src/templates/footer.html');
+    $("#header").load('./src/templates/header.html');
+    $("#footer").load('./src/templates/footer.html');
 })
 
 /////observer
@@ -17,4 +17,3 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.animate');
 hiddenElements.forEach((el) => observer.observe(el));
-
