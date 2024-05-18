@@ -17,6 +17,7 @@
     </head>
     <body>
         <header id="header" class="sticky-top"></header>
+         
         <main>
         <!--intro-->
           <section class="text-center" style="margin-bottom: 20vh;">
@@ -31,38 +32,41 @@
                   </h2>
                 </div>
               </div>
+              
             </div>
           </section>
         <!--text-->
 
         <!--scroll-->
           <!--discover boxes-->
-          <section class="container-fluid text-center">
+
+          <hr style="height: 20px;">
+          <section id="discover" class="container-fluid text-center">
             <div class="discover-text animate">
-              <h1 style="color: goldenrod; margin-bottom: 8vh; font-size: 70px;">DISCOVER ACLC GUADALUPE CAMPUS</h1>
+              <h1 style="color: goldenrod; margin-bottom: 8vh; font-size: 70px;"><span>discover</span> <span> ACLC</span> <span>school</span> <span> EVENTS </span><span>&</span> <span>Student </span><span>WORKS</span></h1>
             </div>
             </section>
-
             <section>
-              <div class="discover-main animate" style="animation-duration: 1s; margin-bottom: 10vh;">
+              <div class="discover-main animate" style="margin-bottom: 10vh; background: rgba(255,0,0,0);
+              background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+              background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+              background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
                 <div class="row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card" style="background-color: rgb(93, 24, 24); color: goldenrod;">
-                      <img src="./src/img/class3.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 50vh;">
-                      <div class="card-body">
-                        <h5 class="card-title" style="font-size: 50px;">SCHOOL EVENTS</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="./src/templates/events.html" class="btn btn-primary">Visit</a>
+                  <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
+                    <div class="card text-bg-dark discover-card animate">
+                      <img src="/src/img/singer.jpg" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-center" style="font-size: 8vh;">EVENT</h5>
+                        <button type="button" class="btn btn-outline-info btn-lg discover-main animate">view</button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="card" style="background-color: rgb(93, 24, 24); color: goldenrod;">
-                      <img src="./src/img/class6.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 50vh;">
-                      <div class="card-body text-start">
-                        <h5 class="card-title" style="font-size: 50px;">STUDENT WORKS</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="./src/templates/works.html" class="btn btn-primary">Visit</a>
+                  <div class="col-sm-6 discover-content animate">
+                    <div class="card text-bg-dark discover-card animate">
+                      <img src="/src/img/cpar.jpg" class="card-img" alt="...">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title text-center" style="font-size: 8vh;">WORKS</h5>
+                        <button type="button" class="btn btn-outline-info btn-lg discover-main animate">view</button>
                       </div>
                     </div>
                   </div>
@@ -70,13 +74,17 @@
               </div>
              </section>
              
+
              <!--about-->
-             <section class="container-fluid" style="background-color: rgb(50, 13, 13); padding-bottom: 10vh; padding-top: 10vh; border-radius: 67px 67px 67px 67px;
+             <section class="discover-main animate" id="about" class="container-fluid" style="background: rgba(255,0,0,0);
+             background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+             background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+             background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%); padding-bottom: 10vh; padding-top: 10vh; border-radius: 67px 67px 67px 67px;
              -webkit-border-radius: 67px 67px 67px 67px;
-             -moz-border-radius: 67px 67px 67px 67px;">
+             -moz-border-radius: 67px 67px 67px 67px; animation-duration: 1s;">
               <section class="container-fluid text-center">
                 <div class="discover-text animate">
-                  <h1 style="color: goldenrod; margin-bottom: 8vh; font-size: 70px;">ABOUT ACLC GUADALUPE CAMPUS</h1>
+                  <h1 style="color: goldenrod; margin-bottom: 10vh; font-size: 70px;"><span>about</span> <span> ACLC</span> <span>GUADALUPE</span> <span>CAMPUS</span></h1>
                 </div>
                 </section>
                 <div id="carouselExampleCaptions" class="carousel slide">
@@ -86,8 +94,8 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                   </div>
-                  <div class="carousel-inner discover-main animate" style="border-radius: 69px 69px 69px 69px;">
-                    <div class="carousel-item active">
+                  <div class="carousel-inner main justify-content-center animate" style="border-radius: 69px 69px 69px 69px; width: 80%; margin-left: 10%;">
+                    <div class="carousel-item active main-img animate">
                       <img src="./src/img/flag2.png" class="d-block w-100 img-fluid" alt="...">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Guidance Office</h5>
@@ -126,12 +134,45 @@
                   </button>
                 </div>
               </div>
+              <hr style="background-color: white; height: 10vh;">
               <div class="discover-text animate">
-              <h1 class="text-center" style="color: wheat; margin-top: 8vh; font-size: 30px;"> AMA Computer Learning Center (ACLC) was founded in 1986 and is a top computer training school in the country. It offers both full 2-year programs and shorter courses. ACLC's goal is to produce highly skilled graduates who can meet the growing needs of local and global job markets. The school provides the most up-to-date curriculum to equip students with the necessary skills for IT careers. ACLC also has international partnerships that allow its graduates to get well-paying jobs and advance in their careers.</h1>
+              <h1 class="text-center" style="color: wheat; margin-top: 8vh; font-size: 20px; animation-duration: 1.3s; letter-spacing: 2px;"> AMA Computer Learning Center (ACLC) was founded in 1986 and is a top computer training school in the country. It offers both full 2-year programs and shorter courses. ACLC's goal is to produce highly skilled graduates who can meet the growing needs of local and global job markets. The school provides the most up-to-date curriculum to equip students with the necessary skills for IT careers. ACLC also has international partnerships that allow its graduates to get well-paying jobs and advance in their careers.</h1>
             </div>
             </section>
         <!--discover carousel-->
-        
+        <!--strands choices-->
+        <section id="tracks" class="container-fluid text-center">
+          <div class="discover-text animate">
+            <h1 style="color: goldenrod; margin-top:8vh; margin-bottom: 8vh; font-size: 70px;"><span>TRACKS</span> <span>IN</span> <span class="title-underline">ACLC GUADALUPE CAMPUS</span> <span>AVAILABLE</span></h1>
+          </div>
+          </section>
+          <section>
+            <div style="margin-bottom: 10vh; background: rgba(255,0,0,0);
+            background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+            background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
+            background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);; padding: 10vh; border-radius: 40px;">
+              <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
+                  <div class="card text-bg-dark discover-card animate">
+                    <img src="/src/img/comlab.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-center" style="font-size: 7vh;">ICT-TVL</h5>
+                      <button type="button" class="btn btn-outline-info btn-lg discover-main animate">view</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 discover-content animate">
+                  <div class="card text-bg-dark discover-card animate">
+                    <img src="/src/img/hummsb.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title text-center" style="font-size: 6vh;">ACADEMIC</h5>
+                      <button type="button" class="btn btn-outline-info btn-lg discover-main animate">view</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </section>
         <footer>
           <section>
 

@@ -8,7 +8,11 @@ html{
 }
 
 body{
-    background-color: rgb(29, 29, 59) !important;
+
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, #004190 80%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, #004190 80%);
+    background: -moz-linear-gradient(90deg,#000000 0%, #004190 80%) !important;
     font-family: "Bebas Neue", sans-serif !important;
     font-weight: 400 !important;
     font-style: normal !important;
@@ -16,27 +20,45 @@ body{
 nav{
     color:aliceblue !important;
 }
-header{
-    background-color: rgba(24, 24, 83, 0.452);
-    border-bottom: rgba(24, 24, 83, 0.74);
+header {
+    transition: ease 1s;
+    
+}
+header:hover {
+    background-color: #117afa56;
 }
 
 /*contact button*/
+.navbar-brand{
+    transition: ease 1s;
+    border-bottom: transparent;
+}
+.navbar-brand:hover {
+    letter-spacing: 2px;
+    border-bottom-color: aliceblue !important;
+    border-bottom: 10px !important;
+
+}
+
 header button{
+    font-size: 10px;
     border: rgba(206, 25, 25, 0.486) !important;
-    background-color:rgba(228, 19, 19, 0.486) !important;
+    background-color:rgba(23, 31, 115, 0.486) !important;
+    transition: ease 1s !important;
 }
 header button:hover{
+    height: 6vh;
+    font-size: 20px;
     border: rgba(0, 174, 255, 0.418) !important;
-    background-color: rgb(32, 159, 218) !important;
-    color: rgb(255, 255, 255) !important;
-    transform: scale(1.1) ;
+    background-image: linear-gradient(to right, #9c1664 0%, #cf2b2b 100%);
+    color: rgb(255, 183, 0) !important;
+    scale: 1.05;
 }
 
 
 
 .dropdown-item {
-    color: goldenrod;
+    color: rgb(255, 255, 255);
 }
 .dropdown-item:hover{
     color: wheat;
@@ -45,7 +67,7 @@ header button:hover{
 }
 
 .nav-item a{
-    color: goldenrod !important;
+    color: white !important;
     font-size: 20px;
     text-shadow: 3px 2px 3px black;
     transition: all 0.5s;
@@ -54,7 +76,8 @@ header button:hover{
 
 .nav-item a:hover{
     scale: 1.05;
-    color: aliceblue !important;
+    color: goldenrod !important;
+    letter-spacing: 2px;
 }
 
 
@@ -99,6 +122,7 @@ main{
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
+
 
 
 .main-text-container.show h2{
@@ -148,6 +172,22 @@ footer{
         opacity: 100%;
     }
 }
+@keyframes zoomout-card{
+    from{
+        filter: blur(80%);
+        opacity: 0%;
+        scale: 0.5;
+    }
+    50%{
+        filter: blur(40%);
+        opacity: 50%;
+    }
+    100% {
+        filter: blur(0%);
+        opacity: 100%;
+    }
+}
+
 
 @keyframes zoomout-main{
     from{
@@ -214,7 +254,21 @@ footer{
         opacity: 100%;
     }
 }
-
+@keyframes blurred-carousel {
+    0% {
+        opacity: 0%;
+        filter: blur(100%);
+    }
+    50%{
+        opacity: 50%;
+        filter: blur(50%);
+    }
+    100% {
+        opacity: 100%;
+        filter: blur(0%);
+    }
+    
+}
 /* 
 Phone responsiveness */
 
@@ -280,13 +334,21 @@ Phone responsiveness */
 .discover-text.show h1{
     font-size: 60px; 
     opacity: 0%;
-    
-    
+    color: lavender !important;
     animation-name: main-text-opacity;
     animation-duration: 1s;
     animation-timing-function: 1s ease;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+
+    
+}
+.discover-text span{
+    transition: ease 1s;
+}
+.discover-text span:hover{
+    color: goldenrod;
+    letter-spacing: 7px;
     
 }
 .discover-img {
@@ -319,8 +381,6 @@ Phone responsiveness */
         transform: translateX(0px);
     }
 }
-
-    
 .pop-out-content{
     border-radius: 30px;
     position: relative;
@@ -358,4 +418,124 @@ Phone responsiveness */
 }
 .carousel-item img {
     filter: brightness(72%);
+}
+hr {
+    height:5px;
+    border-width: 0;
+    background-color:#ffb700;
+}
+.discover-content {
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.discover-card {
+    border-radius: 50px;
+    max-height: auto;
+    max-width: auto ;
+    height: auto;
+    object-fit: cover;
+}
+
+.discover-card.show{
+    animation: main-img 1.5s both;
+}
+.discover-content.show{
+    animation: zoomout-card;
+    animation-duration: 1.5s;
+    animation-timing-function:ease-out;
+}
+
+.discover-card:hover img{
+    filter:brightness(70%);
+    filter:blur(70%);
+
+}
+
+.discover-card:hover h5 {
+    font-weight: bold;
+    color: rgb(233, 159, 0);
+    letter-spacing: 5px;
+    text-shadow: 3px 2px 3px rgb(13, 10, 69);
+}
+  .discover-card img{
+    filter: brightness(30%);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 80px 80px 80px 80px;
+-webkit-border-radius: 80px 80px 80px 80px;
+-moz-border-radius: 80px 80px 80px 80px;
+  }
+.card-img-overlay h5 {
+    color: rgb(255, 255, 255);
+    transition: ease 1s;
+}
+.card-img-overlay p {
+    color: rgba(255, 255, 255, 0);
+}
+
+.card-img-overlay button{
+    color: aliceblue;
+    margin: auto;
+    margin-top: 10vh;
+    background-color:#1f227a8c  !important;
+    width: 5em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #df2323,
+                -6px -6px 12px #e72c2c;
+}
+.card-img-overlay button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #9c1664 0%, #cf2b2b 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    box-shadow: transparent !important;
+    transition: ease-out 1s;
+   }
+   .card-img-overlay button:hover::before {
+    width: 9em;
+   }
+   .card-img-overlay button:hover {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: goldenrod;
+   }
+.card-img-overlay:hover p {
+    color: rgb(255, 255, 255);
+}
+/* puke ni tony */
+@media only screen and (max-width: 800px) {
+    
+    /* content */
+    .card-img-overlay h5{
+        font-size: 10px;
+    }
+    .discover-card img{
+        height: 20vh;
+    }
+    .card-img-overlay button{
+        font-size: 10px;
+        margin-top: 1px;
+    }
+    .card-img img {
+        height: 60px;
+        width: 60vh;
+    }
 }
