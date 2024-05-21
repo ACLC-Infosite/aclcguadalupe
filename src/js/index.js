@@ -1,6 +1,4 @@
 $(function(){
-    $("#header").load('/src/templates/header.html');
-    $("#footer").load('/src/templates/footer.html');
     $("#header2").load('/src/templates/header2.html');
     $("#header3").load('/src/templates/header3.html');
 })
