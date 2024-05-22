@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
         
     </head>
     <body>
@@ -36,7 +37,7 @@
                     <a class="nav-link" href="#discover">Discover</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#tracks">Tracks</a>
+                    <a class="nav-link" href="#tracks">Enroll</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,14 +46,14 @@
                     <ul class="dropdown-menu" style="background-color: rgba(23, 18, 83, 0.609);">
                       <li><a class="dropdown-item" href="src/templates/events.html">Student Events</a></li>
                       <li><a class="dropdown-item" href="src/templates/works.html">Student WORKS</a></li>
-                      <li><a class="dropdown-item" href="src/templates/works.html">ACADEMIC TRACK</a></li>
-                      <li><a class="dropdown-item" href="src/templates/works.html">ICT-TVL TRACK</a></li>
+                      <li><a class="dropdown-item" href="src/templates/academic.html">ACADEMIC TRACK</a></li>
+                      <li><a class="dropdown-item" href="src/templates/ict-tvl.html">ICT-TVL TRACK</a></li>
                     </ul>
                   </li>
                  
                 </ul>
-                <div class="d-flex" role="search">
-                  <button class="btn btn-outline-success" type="submit" style="border-color: rgb(128, 0, 0); color: rgb(255, 255, 255);">Contact</button>
+                <div class="d-flex contacts" role="search">
+                  <a class="btn btn-outline-success" href="#footer" type="submit" style="border-color: rgb(255, 255, 255); color: rgb(255, 255, 255);">Contact</a>
                 </div>
               </div>
             </div>
@@ -64,9 +65,9 @@
           <section class="text-center" style="margin-bottom: 20vh;">
             <div class="row align-items-start">
               <div class="main justify-content-center animate">
-                <img class="main-img animate" src="src/img/ns4c3.jpg" alt="" style="position: inherit;" >
+                <img class="main-img animate" src="/.src/img/ns4c3.jpg" alt="" style="position: inherit;" >
                 <div class="main-text-container animate">
-                  <h1 style="color: #E6E8E6; text-shadow: 1px 3px 5px black;">Aclc-Guadalupe Campus</h1>
+                  <h1 class="title-intro" style="color: #E6E8E6; text-shadow: 1px 3px 5px black;">Aclc Guadalupe Campus</h1>
                   <h2 style="color: #E6E8E6; text-shadow: 1px 3px 5px black;"> 
                     Knowledge is the start
                     To journey to the stars
@@ -81,32 +82,32 @@
         <!--scroll-->
           <!--discover boxes-->
 
-          <hr class="discover-content animate" style="height: 20px;">
+          
           <section id="discover" class="container-fluid text-center">
             <div class="discover-text animate">
               <h1 style="color: goldenrod; margin-bottom: 8vh; font-size: 70px;"><span>discover</span> <span> ACLC</span> <span>school</span> <span> EVENTS </span><span>&</span> <span>Student </span><span>WORKS</span></h1>
             </div>
             </section>
             <section>
-              <div class="discover-main animate" style="margin-bottom: 10vh; background: rgba(255,0,0,0);
-              background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-              background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-              background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
+              <div class="discover-main animate" style="margin-bottom: 10vh; background: #29132f;
+              background: linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%);
+              background: -webkit-linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%);
+              background: -moz-linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
                 <div class="row">
                   <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                     <div class="card text-bg-dark discover-card animate">
                       <img src="src/img/events-button.png" class="card-img" alt="...">
                       <div class="card-img-overlay">
-                        <h5 class="card-title text-center" style="font-size: 8vh;">EVENT</h5>
+                        <h5 class="card-title text-center" style="font-size: 10vh;">EVENTS</h5>
                         <a type="button" href="src/templates/events.html" class="btn btn-outline-info btn-lg discover-main animate">view</a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 discover-content animate ">
+                  <div class="col-sm-6 discover-content animate">
                     <div class="card text-bg-dark discover-card animate">
-                      <img src="src/img/cpar.jpg" class="card-img" alt="...">
+                      <img src="/src/img/cpar.jpg" class="card-img" alt="...">
                       <div class="card-img-overlay">
-                        <h5 class="card-title text-center" style="font-size: 8vh;">WORKS</h5>
+                        <h5 class="card-title text-center" style="font-size: 10vh;">WORKS</h5>
                         <a type="button" href="src/templates/works.html" class="btn btn-outline-info btn-lg discover-main animate">view</a>
                       </div>
                     </div>
@@ -115,12 +116,12 @@
               </div>
              </section>
              
-
+             
              <!--about-->
              <section class="discover-main animate" id="about" class="container-fluid" style="background: rgba(255,0,0,0);
-             background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-             background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-             background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%); padding-bottom: 10vh; padding-top: 10vh; border-radius: 67px 67px 67px 67px;
+             background: linear-gradient(90deg,rgba(255,0,0,0) 0%, #5d3598 40%, rgba(0,255,0,0) 80%);
+             background: -webkit-linear-gradient(90deg,rgba(255,0,0,0) 0%, #5d3598 40%, rgba(0,255,0,0) 80%);
+             background: -moz-linear-gradient(90deg,rgba(255,0,0,0) 0%, #5d3598 40%, rgba(0,255,0,0) 80%); padding-bottom: 10vh; padding-top: 10vh; border-radius: 67px 67px 67px 67px;
              -webkit-border-radius: 67px 67px 67px 67px;
              -moz-border-radius: 67px 67px 67px 67px; animation-duration: 1s;">
               <section class="container-fluid text-center">
@@ -176,36 +177,67 @@
                 </div>
               </div>
               <div class="discover-text animate">
-              <h1 class="text-center" style="color: wheat; margin-top: 8vh; font-size: 20px; animation-duration: 1.3s; letter-spacing: 2px;"> AMA Computer Learning Center (ACLC) was founded in 1986 and is a top computer training school in the country. It offers both full 2-year programs and shorter courses. ACLC's goal is to produce highly skilled graduates who can meet the growing needs of local and global job markets. The school provides the most up-to-date curriculum to equip students with the necessary skills for IT careers. ACLC also has international partnerships that allow its graduates to get well-paying jobs and advance in their careers.</h1>
+              <h1 class="text-center" style="color: wheat; margin-top: 3vh; font-size: 20px; animation-duration: 1.3s; letter-spacing: 2px;"> AMA Computer Learning Center (ACLC) was founded in 1986 and is a top computer training school in the country. It offers both full 2-year programs and shorter courses. ACLC's goal is to produce highly skilled graduates who can meet the growing needs of local and global job markets. The school provides the most up-to-date curriculum to equip students with the necessary skills for IT careers. ACLC also has international partnerships that allow its graduates to get well-paying jobs and advance in their careers.</h1>
             </div>
-            </section>
+           
+              <section>
+                <div class="discover-main animate" style="margin-bottom: 10vh; background: #29132f;
+                background: linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%);
+                background: -webkit-linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%);
+                background: -moz-linear-gradient(270deg,#29132f 0%, #650a2e 30%, rgba(68,25,85,0) 80%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
+                  <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
+                      <div class="card text-bg-dark discover-card animate">
+                        <img src="src/img/amable.jpg" class="card-img" alt="..." style="height: 80vh; object-fit: cover;">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title text-end" style="font-size: 8vh;">dr amable aguiluz </h5>
+                          <p style="font-size: 30px;">Chairman Emertus, AMA education system</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 discover-content animate">
+                      <div class="card text-bg-dark discover-card animate">
+                        <img src="/src/img/mam agnes 2.jpg" class="card-img" alt="..."style="height: 80vh; object-fit: cover;">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title text-end" style="font-size: 8vh;">Agnes Barrun Sumande</h5>
+                          <p style="font-size: 30px;">SCHOOL DIRECTOR, GUADALUPE BRANCH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </section>
+            <hr style="width: 100%; background-color: rgb(0, 252, 252);   box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #ffffff;">
         <!--discover carousel-->
         <!--strands choices-->
-        <section id="tracks" class="container-fluid text-center">
+              <section id="tracks" class="container-fluid text-center">
           <div class="discover-text animate">
             <h1 style="color: goldenrod; margin-top:8vh; margin-bottom: 8vh; font-size: 70px;"><span>TRACKS</span> <span>IN</span> <span class="title-underline">ACLC GUADALUPE CAMPUS</span> <span>AVAILABLE</span></h1>
           </div>
           </section>
+          <div class="discover-text animate text-center">
+            <h1 style="color: rgb(195, 108, 198) !important;; margin-top:8vh; margin-bottom: 8vh; font-size: 40px; animation-duration: 3s; animation-delay: 1s;">We are offering high quality education with a new normal set up. You can choose the track of your choice. </h1>
+          </div>
           <section>
-            <div style="margin-bottom: 10vh; background: rgba(255,0,0,0);
-            background: linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-            background: -webkit-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%);
-            background: -moz-linear-gradient(0deg,rgba(255,0,0,0) 0%, rgba(23,21,60,0.68) 100%); padding: 10vh; border-radius: 40px;">
+            <div style="margin-bottom: 10vh; background: #6f1313;
+            background: linear-gradient(90deg,#6f1313 0%, #952727 30%, rgba(154,29,29,0) 80%);
+            background: -webkit-linear-gradient(90deg,#6f1313 0%, #952727 30%, rgba(154,29,29,0) 80%);
+            background: -moz-linear-gradient(90deg,#6f1313 0%, #952727 30%, rgba(154,29,29,0) 80%); padding: 10vh; border-radius: 40px;">
               <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                   <div class="card text-bg-dark discover-card animate">
                     <img src="src/img/comlab.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
-                      <h5 class="card-title text-center" style="font-size: 7vh;">ICT-TVL</h5>
-                      <a type="button" href="src/templates/academic.html" class="btn btn-outline-info btn-lg discover-main animate">view</a>
+                      <h5 class="card-title text-center" style="font-size: 10vh;">ICT-TVL</h5>
+                      <a type="button" href="src/templates/ict-tvl.html" class="btn btn-outline-info btn-lg discover-main animate">view</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6 discover-content animate">
                   <div class="card text-bg-dark discover-card animate">
-                    <img src="src/img/hummsb.jpg" class="card-img" alt="...">
+                    <img src="src/img/rsch.png" class="card-img" alt="...">
                     <div class="card-img-overlay">
-                      <h5 class="card-title text-center" style="font-size: 6vh;">ACADEMIC</h5>
+                      <h5 class="card-title text-center" style="font-size: 10vh;">ACADEMIC</h5>
                       <a type="button" href="src/templates/academic.html" class="btn btn-outline-info btn-lg discover-main animate">view</a>
                     </div>
                   </div>
@@ -213,14 +245,83 @@
               </div>
             </div>
            </section>
-        <footer>
-          <section>
+           <hr style="width: 100%; background-color: rgb(0, 252, 252);   box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #ffffff; margin-top: 10vh;">
+<!-- Footer -->
+<footer class="bg-transparent text-center" style="background: rgba(255,0,236,0);
+background: linear-gradient(271deg,rgba(255,0,236,0) 0%, rgba(0,4,50,0.57) 80%);
+background: -webkit-linear-gradient(271deg,rgba(255,0,236,0) 0%, rgba(0,4,50,0.57) 80%);
+background: -moz-linear-gradient(271deg,rgba(255,0,236,0) 0%, rgba(0,4,50,0.57) 80%); margin-top: 30vh;">
+    <!-- Grid container -->
+    <div class="container p-4 text-center">
+        
+          <!-- Section: Social media -->
+      <section class="mb-4">
+        <div class="card-body">
+            <img src="/src/img/Aclc4.png" alt="logo" height="80vh" style="margin-right: 3vh; margin-top: 0;"></a>
+            <section class="mb-4 text-center" >
+                <!-- Facebook -->
+                <a class="btn icon" style="background-image: linear-gradient(to top, #00047f 0%, #0060cd 100%) !important;" href="https://www.facebook.com/aclcguadalupe.edu.ph" role="button"><ion-icon name="logo-facebook" aria-label="favorite"></ion-icon></a>
+          
+                <!-- Twitter -->
+                <a class="btn icon" style="background-image: linear-gradient(to top, #c508cf 0%, #dfa400 100%) !important;" href="https://www.instagram.com/aclcguadalupe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" role="button"><ion-icon name="logo-instagram" aria-label="favorite"></ion-icon></a>
+          
+                <!--  -->
+                <a class="btn icon" style="background-image: linear-gradient(to top, #8f8f8f 0%, #000000 100%) !important;" href="https://x.com/aclcguadalupe" role="button"><ion-icon name="logo-twitter" aria-label="favorite"></ion-icon></a>
+    
+                <!--Google maps-->
+                <a class="btn icon" style="background-image: linear-gradient(to top, #00fa04 0%, #007ad1 100%) !important;" href="https://maps.app.goo.gl/UYUSJLyTkZA9ZXyX6" role="button"><ion-icon name="location-outline" aria-label="favorite"></ion-icon></a>
+              </section>
+            <p class="card-text">The AMA Computer Learning Center (ACLC) was established in 1987 and the AMA Telecommunication & Electronic Learning Center in 1996. The former offers short-course programs for professionals and two-year technical/vocational courses for those who wish to acquire employment skills.</p>
+          </div>
+      </section>
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <h5>MISSION</h5>
+            <p> Provide a holistic, quality and globally recognized IT-based Education in all levels and disciplines with the objective of producing professionals and leaders responsive to the needs of Science and the International Community cognizant of the welfare and benefit of its men and women thereby realizing their potential as productive members of society for the honor of God Almighty.</p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-sm-6">
+            <h5>VISION</h5>
+            <p>    To become the leader and dominant provider of quality and excellent information technology-based business education and related services in the global market.</p>
+          </div>
+      </section>
+      <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact us</h5>
 
-          </section>
-        </footer>
+        <ul class="list-unstyled mb-0 text-center">
+          <li>
+            <a href="#!" class="text-light">83731201 / 88820964</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">09989734909 / 09051666681</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/aclcguadalupe.edu.ph" class="text-light">aclc-guadalupe.edu.ph</a>
+          </li>
+          </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Location</h5>
+  
+            <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">4th Floor Wigwam Place, 2014 Ramon Magsaysay Ave, Makati, 1212 Metro Manila</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
         <script src="src/js/index.js"></script>
-    </body>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </body>
 </html>
 
 <!-- test -->
