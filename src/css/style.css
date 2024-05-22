@@ -492,6 +492,12 @@ hr {
   color: rgb(255, 255, 255);
 }
 
+.icon{
+  font-size: 2rem;
+  margin: 0px 5px;
+}
+
+
 @media only screen and (max-width: 800px) {
   /* content */
   .card-img-overlay h5 {
