@@ -13,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
     </head>
     <body>
@@ -33,18 +36,22 @@
                 </li>
         
                 <li class="nav-item">
-                  <a class="nav-link" href="#live">Live Perfomances</a>
+                  <a class="nav-link" href="#act">Acting performance</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#Requirements">Dances</a>
+                  <a class="nav-link" href="#dance">Dance Perfomance</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#video">Videography Perfomance</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     School
                   </a>
                   <ul class="dropdown-menu" style="background-color: rgba(23, 18, 83, 0.609);">
-                    <li><a class="dropdown-item" href="../templates/ict-tvl.html">ICT-TVL TRACK</a></li>
+                    <li><a class="dropdown-item" href="../templates/ict-tvl.html">TVL-ICT TRACK</a></li>
                     <li><a class="dropdown-item" href="../templates/events.html">Student events</a></li>
                     <li><a class="dropdown-item" href="../templates/academic.html">Academic TRACK</a></li>
                   </ul>
@@ -61,11 +68,11 @@
       <!--intro-->
 
 
-        <!--sportfest-->
+        <!--posters-->
         <main>
-          <section id="fieldtrip" class="container-fluid text-center">
+          <section id="poster" class="container-fluid text-center">
             <div class="discover-text animate">
-              <h1 style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important;"><span>SCHOOL</span> <span>EVENTS</span> <span>IN</span><span> ACLC</span> <span>GUADALUPE</span> <span> CAMPUS</span></h1>
+              <h1 style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important; color: lavender;"><span>STUDENT</span> <span>WORKS</span> <span>IN</span><span> ACLC</span> <span>GUADALUPE</span> <span> CAMPUS</span></h1>
             </div>
             </section>
          
@@ -77,69 +84,220 @@
             <div class="row">
               <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                 <div class="card text-bg-dark discover-card animate" >
-                  <img src="../img/cpar2.png" class="card-img" alt="...">
+                  <img src="../img/cpar2.png" class="card-img" alt="..." type="button" class="btn btn-primary" data-toggle="modal" data-target="#poster1"  data-bs-whatever="@">
                 </div>
               </div>
               <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                 <div class="card text-bg-dark discover-card animate" >
-                  <img src="../img/cpar3.png" class="card-img" alt="...">
+                  <img src="../img/cpar3.png" class="card-img" alt="..." type="button" class="btn btn-primary" data-toggle="modal" data-target="#poster2"  data-bs-whatever="@">
                 </div>
                 </div>
                 </div>
-         <section id="discover" class="container-fluid text-center">
+           <section class="container-fluid text-center">
             <div class="discover-text animate">
-              <h1 class="title-events" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important;"><span>SLOGAN</span> <span>&</span> <span>POSTER</span> <span>MAKING</span></h1>
+              <h1 class="title-events" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important; color: lavender;"><span>SLOGAN</span> <span>&</span> <span>POSTER</span> <span>MAKING</span></h1>
               <p class="p-events" style="font-size: 20px; color: antiquewhite;">The purpose of a slogan is to appeal so that your customers will buy your products or services. On the other hand, a motto represents the organization's core values and beliefs that it follows as a brand. A motto compromises ethics and ideas that reflect the behavior of a particular group as a whole.</p>
+              <p class="p-events" style="font-size: 18px; color: rgb(146, 146, 146)"> artworks made by TVL-ICT students (batch 2023 - 2024)</p>
             </div>
             </section>
             </div>
             </div>
-            <div id="sport" class="discover-main animate" style="margin-bottom: 10vh; background: rgba(0,192,139,0);
+            
+            <!--Acting-->
+            <div id="act" class="discover-main animate" style="margin-bottom: 10vh; background: rgba(0,192,139,0);
             background: linear-gradient(90deg,rgba(0,192,139,0) 0%, rgba(255,0,177,0.34) 80%);
             background: -webkit-linear-gradient(90deg,rgba(0,192,139,0) 0%, rgba(255,0,177,0.34) 80%);
             background: -moz-linear-gradient(90deg,rgba(0,192,139,0) 0%, rgba(255,0,177,0.34) 80%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
               <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                   <div class="card text-bg-dark discover-card animate" >
-                    <img src="../img/mader.jpg" class="card-img" alt="...">
+                    <img src="../img/mader.jpg" class="card-img" alt="..." type="button" class="btn btn-primary" data-toggle="modal" data-target="#acting1"  data-bs-whatever="@">
                   </div>
                 </div>
                 <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
                   <div class="card text-bg-dark discover-card animate" >
-                    <img src="../img/bata.png" class="card-img" alt="...">
+                    <img src="../img/bata.png" class="card-img" alt="..." type="button" class="btn btn-primary" data-toggle="modal" data-target="#acting2"  data-bs-whatever="@">
                   </div>
                   </div>
                   <section id="discover" class="container-fluid text-center">
                     <div class="discover-text animate" id="Humms">
-                      <h1 class="title-events" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important;"><span>LIVE</span> <span>PERFORMANCES</span></h1>
+                      <h1 class="title-events act-title" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important; color: lavender;"><span>STAGE</span> <span>ACT</span> <span>PERFORMANCES</span></h1>
                       <p class="p-events" style="font-size: 20px; color: antiquewhite;">A play or musical. A concert, a live performance before an audience. A concert performance of opera or musical theatre without theatrical staging. A concert dance, performed live for an audience.</p>
+                      <p class="p-events" style="font-size: 18px; color: rgb(157, 157, 157)"> Acting performance for Contemporary Arts week from ABM students (batch 2023 - 2024)</p>
                     </div>
                     </section>
                     </div>
                     </div>
-                    
-                    <div id="cpar" class="discover-main animate" style="margin-bottom: 10vh; background: rgba(0,192,139,0.82);
-                    background: linear-gradient(90deg,rgba(0,192,139,0.82) 0%, rgba(0,255,0,0) 80%);
-                    background: -webkit-linear-gradient(90deg,rgba(0,192,139,0.82) 0%, rgba(0,255,0,0) 80%);
-                    background: -moz-linear-gradient(90deg,rgba(0,192,139,0.82) 0%, rgba(0,255,0,0) 80%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
+
+                    <!--dance-->
+                    <div id="dance" class="discover-main animate" style="margin-bottom: 10vh; background: rgb(0, 110, 79);
+                    background: linear-gradient(90deg,rgba(0, 133, 95, 0.82) 0%, rgba(0,255,0,0) 80%);
+                    background: -webkit-linear-gradient(90deg,rgba(0, 104, 75, 0.82) 0%, rgba(0,255,0,0) 80%);
+                    background: -moz-linear-gradient(90deg,rgba(0, 117, 84, 0.82) 0%, rgba(0,255,0,0) 80%); padding: 10vh; border-radius: 40px; animation-duration: 1s;">
                       <div class="row">
-                        <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
-                          <div class="card text-bg-dark discover-card animate" >
-                            <img src="../img/hummsb.jpg" class="card-img" alt="...">
-                          </div>
+                        <div class="ratio" style="--bs-aspect-ratio: 40%;" >
+                          <iframe src="https://www.facebook.com/plugins/video.php?height=322&href=https%3A%2F%2Fwww.facebook.com%2Faclcguadalupe.edu.ph%2Fvideos%2F2147377592288937%2F&show_text=false&width=560&t=0" title="dance video" controls allowfullscreen style="border-radius: 44px 44px 44px 44px;
+                          -webkit-border-radius: 44px 44px 44px 44px;
+                          -moz-border-radius: 44px 44px 44px 44px;"></iframe>
                         </div>
-                        <div class="col-sm-6 mb-3 mb-sm-0 discover-content animate">
-                          <div class="card text-bg-dark discover-card animate" >
-                            <img src="../img/spe.png" class="card-img" alt="...">
                           </div>
-                          </div>
-                          <section id="discover" class="container-fluid text-center">
+                          <section class="container-fluid text-center">
                             <div class="discover-text animate">
-                              <h1 class="title-events" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important;"><span>DANCE</span> <span>PERFORMANCES</span></h1>
+                              <h1 class="title-events dance-title text-center" style="margin-top: 10vh; margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important; color: lavender;"><span>DANCE</span> <span>PERFORMANCES</span></h1>
                               <p class="p-events" style="font-size: 20px; color: antiquewhite;">Dance performed for an audience. It is frequently performed in a theatre setting, though this is not a requirement, and it is usually choreographed and performed to set music. It also benefits their school grade, health, confidence and agility</p>
+                              <p class="p-events" style="font-size: 18px; color: rgb(173, 173, 173)"> Dance Perfomance made for PE finals from Stem3b (batch 2023 - 2024)</p>
                             </div>
                             </section>
                             </section>
+                      
+
+                            <div id="video" class="discover-main animate video" style="margin-bottom: 10vh; background: rgba(143, 63, 112, 0.833);
+                            background: linear-gradient(90deg,rgba(143, 63, 112, 0.833) 0%, rgba(0,255,0,0) 80%);
+                            background: -webkit-linear-gradient(90deg,rgba(143, 63, 112, 0.833) 0%, rgba(0,255,0,0) 80%);
+                            background: -moz-linear-gradient(90deg,rgba(143, 63, 112, 0.833) 0%, rgba(0,255,0,0) 80%); padding: 9vh; border-radius: 40px; animation-duration: 1s;">
+                              <div class="row">
+                                <div class="ratio align-items-center" style="--bs-aspect-ratio: 50%;">
+                                    <video src="/src/img/435418790_24982093081439270_7694501904313194871_n.mp4" style=" border-radius: 44px 44px 44px 44px;
+                                    -webkit-border-radius: 44px 44px 44px 44px;
+                                    -moz-border-radius: 44px 44px 44px 44px;" class="object-fit-cover" controls></video>
+                                  </div>
+                                  </div>
+                                </div>
+                                  <section class="container-fluid text-center">
+                                    <div class="discover-text animate">
+                                      <h1 class="title-events video-title" style=" margin-bottom: 8vh; font-size: 70px; animation-duration: 0.8s !important; color: lavender;"><span>VIDEOGRAPHY</span> <span>performance</span></h1>
+                                      <p class="p-events" style="font-size: 20px; color: antiquewhite;">Videography made by senior high school students is a creative and educational activity where students produce short films or videos. This activity enhances their creativity, communication skills, and can be a fun way to explore potential career interests in media or the arts.</p>
+                                      <p class="p-events" style="font-size: 18px; color: rgb(178, 178, 178)">Video Advertisement made for entrep & pagbasa is created by students from Humms4b (batch 2023 - 2024)</p>
+                                    </div>
+                                    </section>
+                                    </section>
+                                    
+              <!-- Modals -->
+            <!--slogan&posters modals-->
+                <div class="modal fade" id="poster1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Slogan & Poster</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="/src/img/cpar2.png" style="object-fit: cover !important; height: auto; width: 100%;">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="poster2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Slogan & Poster</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="/src/img/cpar3.png" style="object-fit: cover !important; height: auto; width: 100%;">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!--acting modals-->
+
+            <div class="modal fade" id="acting1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stage Act Perfomances</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/src/img/mader.jpg" style="object-fit: cover !important; height: auto; width: 100%;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="modal fade" id="acting2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stage Act Perfomances</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/src/img/bata.png" style="object-fit: cover !important; height: auto; width: 100%;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--dance modals-->
+
+               <div class="modal fade" id="dance1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stage Act Perfomances</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/src/img/hummsb.jpg" style="object-fit: cover !important; height: auto; width: 100%;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="modal fade" id="dance2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered  modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stage Act Perfomances</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/src/img/spe.png" style="object-fit: cover !important; height: auto; width: 100%;">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
 </main>
 
 <!-- Footer -->
@@ -157,12 +315,6 @@ background: -moz-linear-gradient(271deg,rgba(255,0,236,0) 0%, rgba(0,4,50,0.57) 
             <section class="mb-4 text-center" >
                 <!-- Facebook -->
                 <a class="btn icon" style="background-image: linear-gradient(to top, #00047f 0%, #0060cd 100%) !important;" href="https://www.facebook.com/aclcguadalupe.edu.ph" role="button"><ion-icon name="logo-facebook" aria-label="favorite"></ion-icon></a>
-          
-                <!-- Twitter -->
-                <a class="btn icon" style="background-image: linear-gradient(to top, #c508cf 0%, #dfa400 100%) !important;" href="https://www.instagram.com/aclcguadalupe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" role="button"><ion-icon name="logo-instagram" aria-label="favorite"></ion-icon></a>
-          
-                <!--  -->
-                <a class="btn icon" style="background-image: linear-gradient(to top, #8f8f8f 0%, #000000 100%) !important;" href="https://x.com/aclcguadalupe" role="button"><ion-icon name="logo-twitter" aria-label="favorite"></ion-icon></a>
     
                 <!--Google maps-->
                 <a class="btn icon" style="background-image: linear-gradient(to top, #00fa04 0%, #007ad1 100%) !important;" href="https://maps.app.goo.gl/UYUSJLyTkZA9ZXyX6" role="button"><ion-icon name="location-outline" aria-label="favorite"></ion-icon></a>
@@ -213,7 +365,8 @@ background: -moz-linear-gradient(271deg,rgba(255,0,236,0) 0%, rgba(0,4,50,0.57) 
       </div>
     </div>
   </footer>
-      <script src="../js/index.js"></script>
+      <script src="../js/modals.js"></script>
+      
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

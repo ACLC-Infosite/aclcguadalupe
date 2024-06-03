@@ -549,6 +549,32 @@ hr {
 .school-director {
   margin-left: 0vh !important;
 }
+.video-title span{
+  font-size: 50px !important;
+  letter-spacing: 2px;
+}
+.dance-title span{
+  font-size: 45px !important;
+  letter-spacing: 2px;
+}
+.act-title span{
+  font-size: 45px !important;
+  letter-spacing: 1px;
+}
+.video video{
+  padding: auto  !important;
+  height: 20vh !important;
+  width: 30vh !important;
+  object-position: center !important;
+}
+.ratio iframe{
+  height: 60vh !important;
+
+}
+.fb-hr hr{
+  margin-top: 10vh !important;
+}
+
 }
 .scale-hover{
   transition: ease 1s;
@@ -566,3 +592,15 @@ hr {
   background-image: linear-gradient(to right, #1494d0 0%, #ab0eca 100%) !important;
   scale: 1.1;
 }
+#image {
+  display: none;
+}
+.modal-content{
+  background-color: rgb(37, 36, 36) !important;
+  color: lavender;
+}
+.modal-content button{
+  background-color: rgb(28, 14, 82);
+  border-color: transparent;
+}
+/*--modals*--/
