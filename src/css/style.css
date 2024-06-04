@@ -603,4 +603,12 @@ hr {
   background-color: rgb(28, 14, 82);
   border-color: transparent;
 }
-/*--modals*--/
+/*--modals--*/
+
+img .intro-image{
+  transition: ease 1s;
+  cursor: pointer;
+}
+img .intro-image:hover{
+  filter: blur(3px) brightness(67%);
+}
